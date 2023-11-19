@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-3pt}}
+	}
+}
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-3pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+	\vspace{-3pt}
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+	\vspace{-3pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\begin{center}
+		% NAME
+		{\Huge\scshape Stefan Marcu} 
+		% SUBHEADING
+		\\ Senior Software Engineer\\
+		\small
+		% EMAIL
+		\href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{stefan.ovidiu.marcu@gmail.com}} ~ 
+		% LINKEDIN
+		\href{LINK}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/stefan-ovidiu-marcu-57b462125}}  ~
+		% MOBILE PHONE NUMBER
+		\href{LINK}{\raisebox{-0.2\height}\faPhone\ \underline{07502099170}}
+	\end{center}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	% COMPANY 1
+	\resumeSubheading
+	{Deliveroo}{London}
+	% POSITION 1
+	{POSITION 1}{December 2021 - December 2023}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	% COMPANY 2
+	\resumeSubheading
+	{Zoopla}{London}
+	% POSITION 1
+	{Software Engineer}{January 2020 - December 2021}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	% POSITION 2
+	\resumeSubheadingContinue
+	{POSITION 2}{DATES}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	% POSITION 3
+	\resumeSubheadingContinue
+	{POSITION 3}{DATES}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	% COMPANY 3
+	\resumeSubheading
+	{AND Digital}{London}
+	% POSITION 1
+	{Product Developer}{April 2018 - December 2019}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+
+	% COMPANY 4
+	\resumeSubheading
+	{Capital One}{London}
+	% POSITION 1
+	{Junior Software Engineer}{September 2017 - April 2018}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	% COMPANY 5
+	\resumeSubheading
+	{Capital One}{Nottingham}
+	% POSITION 1
+	{Intern Software Engineer}{July 2016 - September 2016}
+	\resumeItemListStart
+	\resumeItem{WHAT YOU DID}
+	\resumeItem{WHAT YOU DID}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Education}
+	\resumeSubHeadingListStart
+	
+	% MAIN INFORMATION
+	\resumeSubheading
+	{University of Oxford}{2014 - 2017}
+	{BSC in Computer Science}{}
+	
+	\resumeSubHeadingListEnd
+		
+\end{document}
